@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar hide for cleaner mobile look if needed */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body {
+  background-color: #0f172a; /* Fallback dark blue */
+  background-image: url('https://img.freepik.com/free-vector/neon-gamer-room-background_23-2149872554.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.font-kalpurush {
+  font-family: 'Kalpurush', sans-serif;
+}
+/* Overlay to ensure text readability over the image */
+#root {
+  background-color: rgba(248, 250, 252, 0.92); /* slate-50 with opacity */
+  min-height: 100vh;
+}
